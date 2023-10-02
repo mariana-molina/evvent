@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	.headerButton {
+		@apply px-2 lg:px-6 uppercase text-xs  text-gray-500 transition-all hover:text-[#ea1d7b]/40;
+	}
+}

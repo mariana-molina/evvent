@@ -1,16 +1,12 @@
-import Header from '@/components/Header';
-import ProductSection from '@/components/ProductSection';
+import Dashboard from '@/components/Dashboard';
 import Sidebar from '@/components/Sidebar';
 
 export default function Home() {
 	return (
-		<>
-			<Header />
-			<main className="bg-gray-100 h-screen">
-				<Sidebar />
+		<main className="bg-gray-100 h-screen">
+			<Sidebar />
 
-				<ProductSection />
-			</main>
-		</>
+			<Dashboard />
+		</main>
 	);
 }
