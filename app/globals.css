@@ -4,6 +4,12 @@
 
 @layer components {
 	.headerButton {
-		@apply px-2 lg:px-6 uppercase text-xs  text-gray-500 transition-all hover:text-[#ea1d7b]/40;
+		@apply transition-all hover:text-[#ea1d7b]/40;
+	}
+	.dashboardBox {
+		@apply border border-gray-300 shadow-sm rounded-md p-2 w-[180px] h-[110px];
+	}
+	.dataRow {
+		@apply border border-gray-300 text-xs rounded-md py-0 my-2;
 	}
 }
