@@ -2,6 +2,7 @@
 import React from 'react';
 import Overview from './Overview';
 import TableArea from './TableArea';
+import Chart from './Chart';
 
 function Dashboard() {
 	return (
@@ -16,6 +17,8 @@ function Dashboard() {
 			<Overview />
 
 			<TableArea />
+
+			<Chart />
 		</div>
 	);
 }
