@@ -13,7 +13,7 @@ function Dashboard() {
 				</p>
 				<p className="text-xs font-semibold p-1.5 ">Transation List</p>
 			</div>
-			{/* <Overview /> */}
+			<Overview />
 
 			<TableArea />
 		</div>

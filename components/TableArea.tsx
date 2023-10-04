@@ -67,21 +67,21 @@ const serviceData = [
 	{
 		id: Math.random(),
 		name: 'Elegance flower shop',
-		img: 'https://picsum.photos/200',
+		img: 'https://picsum.photos/id/210/200',
 		profit: '30.5K NOK',
 		status: 'active',
 	},
 	{
 		id: Math.random(),
 		name: 'Gourmet Coffee House',
-		img: 'https://picsum.photos/200',
+		img: 'https://picsum.photos/id/21/200',
 		profit: '25.2K NOK',
 		status: 'innactive',
 	},
 	{
 		id: Math.random(),
 		name: 'Artistic Creations Studio',
-		img: 'https://picsum.photos/200',
+		img: 'https://picsum.photos/id/12/200',
 		profit: '45.8K NOK',
 		status: 'active',
 	},
@@ -95,63 +95,63 @@ const serviceData = [
 	{
 		id: Math.random(),
 		name: 'Healthy Living Clinic',
-		img: 'https://picsum.photos/200',
+		img: 'https://picsum.photos/id/2/200',
 		profit: '35.7K NOK',
 		status: 'innactive',
 	},
 	{
 		id: Math.random(),
 		name: 'Savory Bites Catering',
-		img: 'https://picsum.photos/200',
+		img: 'https://picsum.photos/id/20/200',
 		profit: '28.9K NOK',
 		status: 'active',
 	},
 	{
 		id: Math.random(),
 		name: `Nature's Harmony Spa`,
-		img: 'https://picsum.photos/200',
+		img: 'https://picsum.photos/id/33/200',
 		profit: '50.3K NOK',
 		status: 'active',
 	},
 	{
 		id: Math.random(),
 		name: 'Adventure Seekers Tours',
-		img: 'https://picsum.photos/200',
+		img: 'https://picsum.photos/id/44/200',
 		profit: '40.2K NOK',
 		status: 'innactive',
 	},
 	{
 		id: Math.random(),
 		name: 'Retro Vinyl Records',
-		img: 'https://picsum.photos/200',
+		img: 'https://picsum.photos/id/45/200',
 		profit: '55.6K NOK',
 		status: 'active',
 	},
 	{
 		id: Math.random(),
 		name: 'Wholesome Pet Supplies',
-		img: 'https://picsum.photos/200',
+		img: 'https://picsum.photos/id/98/200',
 		profit: '37.4K NOK',
 		status: 'active',
 	},
 	{
 		id: Math.random(),
 		name: 'The Green Thumb Nursery',
-		img: 'https://picsum.photos/200',
+		img: 'https://picsum.photos/id/72/200',
 		profit: '48.0K NOK',
 		status: 'innactive',
 	},
 	{
 		id: Math.random(),
 		name: 'Silent Serenity Yoga Studio',
-		img: 'https://picsum.photos/200',
+		img: 'https://picsum.photos/id/120/200',
 		profit: '33.6K NOK',
 		status: 'active',
 	},
 	{
 		id: Math.random(),
 		name: 'Urban Jungle Fitness Center',
-		img: 'https://picsum.photos/200',
+		img: 'https://picsum.photos/id/85/200',
 		profit: '42.7K NOK',
 		status: 'active',
 	},
@@ -159,107 +159,65 @@ const serviceData = [
 
 function TableArea() {
 	return (
-		<div>
-			<section
-				id="transation-list"
-				className="flex flex-col md:flex-row space-x-2 m-2"
-			>
-				<div className="border border-gray-300 max-w-[400px] rounded-md p-2 shadow-sm">
+		<section
+			id="transation-list"
+			className="flex flex-col md:flex-row m-2 space-y-5 md:space-y-0 md:space-x-5"
+		>
+			<div className="border border-gray-300 max-w-[400px] rounded-md p-4 shadow-sm">
+				<div className="flex flex-row justify-between font-bold items-center m-4">
+					<h3>Transation List</h3>
+					<MdKeyboardArrowRight />
+				</div>
+				<div>
+					<div className="flex flex-row bg-gray-200 justify-around max-w-[400px] rounded-md mx-4 p-2.5 text-xs font-bold">
+						<p>Transation</p>
+						<p>Amount</p>
+						<p>Date</p>
+						<p>Status</p>
+					</div>
+					<table className="max-w-[400px] border-separate border-spacing-2 flex max-h-[400px] overflow-y-scroll justify-center">
+						<thead></thead>
+						<tbody>
+							{peopleData.map(people => {
+								return (
+									<tr key={people.id} className="dataRow">
+										<td className="capitalize px-2 w-[100px]">
+											<p>{people.name}</p>
+											<p className="text-gray-500">{people.phone}</p>
+										</td>
+										<td className="text-green-500  px-2">{people.amount}</td>
+										<td className="text-gray-500  px-2">{people.date}</td>
+										<td
+											className={`capitalize w-fit font-bold rounded-md py-0.5 px-2 text-center ${
+												people.status === 'pending'
+													? 'bg-[#f1b3b3] text-[#e82525]'
+													: 'bg-[#f1e3b3] text-[#e8bb25]'
+											}`}
+										>
+											{people.status}
+										</td>
+									</tr>
+								);
+							})}
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div>
+				<div className="border border-gray-300 max-w-[400px] rounded-md p-4 shadow-sm">
 					<div className="flex flex-row justify-between font-bold items-center m-4">
-						<h3>Transation List</h3>
+						<h3>Top Performance (Monthly)</h3>
 						<MdKeyboardArrowRight />
 					</div>
 					<div>
-						<div className="flex flex-row bg-gray-200 justify-around max-w-[400px] rounded-md mx-4 p-2.5 text-xs">
-							<p>Transation</p>
-							<p>Amount</p>
-							<p>Date</p>
+						<div className="flex flex-row bg-gray-200 justify-around max-w-[400px] rounded-md mx-4 p-2.5 text-xs font-bold">
+							<p>Service</p>
+							<p>Profit</p>
 							<p>Status</p>
 						</div>
-						<table className="max-w-[400px] border-separate border-spacing-2 flex max-h-[400px] overflow-y-scroll justify-center">
+						<table className="max-w-[400px] border-separate border-spacing-2 flex flex-col max-h-[400px] overflow-y-scroll">
 							<thead></thead>
 							<tbody>
-								{peopleData.map(people => {
-									return (
-										<tr key={people.id} className=" dataRow">
-											<td className="capitalize px-2 w-[100px]">
-												<p>{people.name}</p>
-												<p className="text-gray-500">{people.phone}</p>
-											</td>
-											<td className="text-green-800  px-2">{people.amount}</td>
-											<td className="text-gray-500  px-2">{people.date}</td>
-											<td
-												className={`capitalize w-fit font-bold rounded-md py-0.5 px-2 text-center ${
-													people.status === 'pending'
-														? 'bg-[#f1b3b3] text-[#e82525]'
-														: 'bg-[#f1e3b3] text-[#e8bb25]'
-												}`}
-											>
-												{people.status}
-											</td>
-										</tr>
-									);
-								})}
-							</tbody>
-						</table>
-					</div>
-
-					{/* <div className="border border-gray-300 shadow-sm">
-						<div className="flex flex-row justify-between font-bold items-center m-4">
-							<h3>Transation List</h3> <MdKeyboardArrowRight />
-						</div>
-						<div className="flex flex-col items-center">
-							<div className="flex flex-row bg-gray-200 justify-between w-[350px] rounded-md mx-4 my-2 p-2.5 text-xs">
-								<p>Transation</p>
-								<p>Amount</p>
-								<p>Date</p>
-								<p>Status</p>
-							</div>
-							<table className="w-full border-separate border-spacing-2 max-w-[350px] flex flex-col h-[400px] overflow-y-scroll">
-								{peopleData.map(person => {
-									return (
-										<tr key={person.id} className="dataRow">
-											{/* <td className="px-2 capitalize w-[90px]">
-												{person.name} <br />
-												<p className="text-gray-500"> {person.phone}</p>
-											</td>
-											<td className="px-2 text-green-800  w-[130px]">
-												{person.amount}
-											</td>
-											<td className="px-2 text-gray-500  w-[90px]">
-												{person.date}
-											</td>
-											<td className="px-2 w-[70px] ">
-												<p
-													className={`capitalize w-fit font-bold rounded-md py-0.5 px-2 text-center ${
-														person.status === 'pending'
-															? 'bg-[#f1b3b3] text-[#e82525]'
-															: 'bg-[#f1e3b3] text-[#e8bb25]'
-													}`}
-												>
-													{person.status}
-												</p>
-											</td> 
-										 </tr>
-									);
-								})}
-							</table>
-						</div>
-					</div> */}
-
-					{/* OTRA TABLA */}
-					{/* <div className="border border-gray-300 shadow-sm">
-						<div className="flex flex-row justify-between font-bold items-center m-4">
-							<h3>Top Performance (Monthly)</h3>
-							<MdKeyboardArrowRight />
-						</div>
-						<div className="flex flex-col items-center">
-							<div className="flex flex-row bg-gray-200 justify-between w-[300px] rounded-md mx-4 my-2 p-2.5 text-xs font-bold">
-								<p>Service</p>
-								<p>Profit</p>
-								<p>Status</p>
-							</div>
-							<table className="w-full border-separate border-spacing-2 max-w-[300px] flex flex-col h-[400px] overflow-y-scroll">
 								{serviceData.map(service => {
 									return (
 										<tr key={service.id} className="dataRow">
@@ -267,17 +225,16 @@ function TableArea() {
 												<Image
 													src={service.img}
 													alt="service image"
-													height={20}
-													width={20}
+													height={25}
+													width={25}
+													className="rounded-sm"
 												/>
 											</td>
-											<td className="px-2 w-[90px] capitalize font-semibold whitespace-nowrap overflow-hidden text-ellipsis">
+											<td className=" w-[90px] capitalize font-semibold whitespace-nowrap overflow-hidden text-ellipsis">
 												{service.name}
 											</td>
-											<td className="px-2 text-green-800 w-[110]">
-												{service.profit}
-											</td>
-											<td className="px-2 w-[100px] ">
+											<td className="px-2 text-green-500">{service.profit}</td>
+											<td className="px-2">
 												<p
 													className={`capitalize w-fit font-bold rounded-md py-0.5 px-2 text-center ${
 														service.status === 'active'
@@ -291,12 +248,12 @@ function TableArea() {
 										</tr>
 									);
 								})}
-							</table>
-						</div>
-					</div> */}
+							</tbody>
+						</table>
+					</div>
 				</div>
-			</section>
-		</div>
+			</div>
+		</section>
 	);
 }
 
