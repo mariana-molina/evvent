@@ -10,6 +10,6 @@
 		@apply border border-gray-300 shadow-sm rounded-md p-2 w-[180px] h-[110px];
 	}
 	.dataRow {
-		@apply border border-gray-300 text-xs rounded-md py-0 my-2;
+		@apply flex justify-between items-center border border-gray-300 text-xs rounded-md p-2 my-2;
 	}
 }
