@@ -1,12 +1,19 @@
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import Dashboard from '@/components/Dashboard';
 import Sidebar from '@/components/Sidebar';
 
 export default function Home() {
 	return (
-		<main className=" h-screen">
-			<Sidebar />
+		<>
+			<Header />
 
-			<Dashboard />
-		</main>
+			<main className="">
+				<Sidebar />
+
+				<Dashboard />
+			</main>
+			<Footer />
+		</>
 	);
 }

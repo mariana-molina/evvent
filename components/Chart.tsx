@@ -33,7 +33,7 @@ const dataFormatter = (number: number) => {
 
 function Chart() {
 	return (
-		<div className="m-2">
+		<div className="m-2 max-w-4xl">
 			<Card>
 				<div className="flex flex-row items-center justify-between">
 					<Title className="font-extrabold">Sale Statistic</Title>
@@ -42,7 +42,7 @@ function Chart() {
 							<p>Last Month</p>
 							<MdKeyboardArrowDown />
 						</button>
-						<button className="border bg-[#e04e92] rounded-md p-1 md:p-1 md:px-3 text-white">
+						<button className="border bg-[#ec1c7b] rounded-md p-1 md:p-1 md:px-3 text-white">
 							Download CSV
 						</button>
 					</div>
