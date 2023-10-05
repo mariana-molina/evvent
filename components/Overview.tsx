@@ -38,7 +38,7 @@ const evventData = [
 function Overview() {
 	return (
 		<section id="overview">
-			<div className="flex flex-row flex-wrap m-2 text-sm gap-2 md:space-x-4">
+			<div className="flex flex-row flex-wrap m-2 text-sm gap-2 md:space-x-4 ">
 				{evventData.map(data => {
 					const colorData =
 						typeof data.services === 'string' || typeof data.number === 'string'

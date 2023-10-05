@@ -7,7 +7,7 @@
 		@apply hover:text-[#ec1c7b] px-0 mr-1 md:px-2 md:mr-5;
 	}
 	.dashboardBox {
-		@apply border border-gray-300 shadow-sm rounded-md p-2 w-[180px] h-[110px];
+		@apply border border-gray-300 shadow-sm rounded-md p-2 w-[180px] h-[110px] hover:shadow-md cursor-pointer;
 	}
 	.dataRow {
 		@apply flex justify-between items-center border border-gray-300 text-xs rounded-md p-2 my-2;

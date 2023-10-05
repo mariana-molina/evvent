@@ -163,7 +163,7 @@ function TableArea() {
 			id="transation-list"
 			className="flex flex-col md:flex-row m-2 space-y-5 md:space-y-0 md:space-x-5"
 		>
-			<div className="border border-gray-300 max-w-[400px] rounded-md p-4 shadow-sm">
+			<div className="border border-gray-300 max-w-[400px] rounded-md p-4 shadow-sm hover:shadow-md cursor-pointer">
 				<div className="flex flex-row justify-between font-bold items-center m-4">
 					<h3>Transation List</h3>
 					<MdKeyboardArrowRight />
@@ -204,7 +204,7 @@ function TableArea() {
 				</div>
 			</div>
 			<div>
-				<div className="border border-gray-300 max-w-[400px] rounded-md p-4 shadow-sm">
+				<div className="border border-gray-300 max-w-[400px] rounded-md p-4 shadow-sm hover:shadow-md cursor-pointer">
 					<div className="flex flex-row justify-between font-bold items-center m-4">
 						<h3>Top Performance (Monthly)</h3>
 						<MdKeyboardArrowRight />

@@ -59,7 +59,7 @@ function Sidebar() {
 	return (
 		<div className=" bg-gray-100 shadow-md hidden md:flex md:flex-col items-center p-3 w-1/4 max-h-[700px] z-50 mr-5">
 			<div className="bg-[#ec1c7b] rounded-md text-center text-white font-bold w-[120px] p-2 text-xl my-5">
-				<p>evvent.no</p>
+				<button>evvent.no</button>
 			</div>
 			<div>
 				{sidebarInfo.map(select => {
