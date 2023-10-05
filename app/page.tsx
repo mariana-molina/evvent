@@ -9,7 +9,7 @@ export default function Home() {
 		<div className="flex flex-col w-full">
 			<div className="flex flex-row mb:5">
 				<Sidebar />
-				<div className="flex flex-col w-full md:mb-5 md:mr-5">
+				<div className="flex flex-col w-full md:mb-8 md:mr-5">
 					<Header />
 					<Dashboard />
 				</div>

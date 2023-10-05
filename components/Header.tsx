@@ -6,7 +6,7 @@ import { BsChat } from 'react-icons/bs';
 import ShortLogo from './ShortLogo';
 function Header() {
 	return (
-		<header className="bg-white flex items-center justify-between m-2 w-full z-0">
+		<header className="bg-white flex items-center justify-between mx-2 w-full z-0 my-7">
 			<div className="flex flex-row items-center text-sm">
 				<div className="md:hidden">
 					<ShortLogo />
