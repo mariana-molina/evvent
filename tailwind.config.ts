@@ -24,7 +24,7 @@ const config: Config = {
 					},
 					background: {
 						muted: '#f9fafb', // gray-50
-						subtle: '#f3f4f6', // gray-100
+						subtle: '#d1d5db', // gray-100
 						DEFAULT: '#ffffff', // white
 						emphasis: '#374151', // gray-700
 					},

@@ -4,12 +4,18 @@
 
 @layer components {
 	.headerButton {
-		@apply transition-all hover:text-[#ea1d7b]/40;
+		@apply hover:text-[#ec1c7b] px-0 mr-1 md:px-2 md:mr-5 font-semibold;
 	}
 	.dashboardBox {
 		@apply border border-gray-300 shadow-sm rounded-md p-2 w-[180px] h-[110px];
 	}
 	.dataRow {
 		@apply flex justify-between items-center border border-gray-300 text-xs rounded-md p-2 my-2;
+	}
+	.sidebarButton {
+		@apply flex flex-row w-full font-bold text-xl items-center p-2 rounded-md hover:border-gray-300 hover:shadow-md hover:bg-slate-200 transition-all;
+	}
+	.footerButton {
+		@apply hover:text-[#ec1c7b] text-left;
 	}
 }

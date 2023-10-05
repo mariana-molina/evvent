@@ -38,11 +38,11 @@ function Chart() {
 				<div className="flex flex-row items-center justify-between">
 					<Title className="font-extrabold">Sale Statistic</Title>
 					<div className="flex flex-row space-x-2 text-xs md:text-base">
-						<button className="border border-gray-300 rounded-md font-semibold p-1 md:p-1 md:px-3 flex flex-row items-center space-x-2">
+						<button className="border border-gray-300 rounded-md font-semibold p-1 md:p-1 md:px-3 flex flex-row items-center space-x-2 hover:shadow-lg">
 							<p>Last Month</p>
 							<MdKeyboardArrowDown />
 						</button>
-						<button className="border bg-[#ec1c7b] rounded-md p-1 md:p-1 md:px-3 text-white">
+						<button className="border bg-[#ec1c7b] rounded-md p-1 md:p-1 md:px-3 text-white hover:shadow-lg">
 							Download CSV
 						</button>
 					</div>
@@ -59,7 +59,7 @@ function Chart() {
 					minValue={25000}
 				/>
 				<div className="flex justify-center items-center">
-					<button className="capitalize border-2 border-[#e04e92] text-[#e04e92] font-bold rounded-md py-1 px-3 mt-6">
+					<button className="capitalize border-2 border-[#e04e92] text-[#e04e92] shadow-sm hover:shadow-lg font-bold rounded-md py-1 px-3 mt-6 active:bg-[#e04e92] active:text-white">
 						See More Statistics
 					</button>
 				</div>
